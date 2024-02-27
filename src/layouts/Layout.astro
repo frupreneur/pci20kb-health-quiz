@@ -34,6 +34,21 @@ const { title = "Health Quiz", description="Check your health with our free onli
     <meta name="twitter:title" content={title}>
     <meta name="twitter:description" content={description}>
     <meta name="twitter:image" content="https://photoconvertinto20kb.com/assets/og.png">
+    <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+    <script>
+      window.googletag = window.googletag || {cmd: []};
+
+      googletag.cmd.push(function() {
+
+        googletag.defineSlot('/23079132631/AdUnit4', [[300, 600], [480, 320], [250, 250], [250, 360], [336, 280], [240, 400], [200, 200], [300, 250], [320, 480], [200, 446]], 'ad1').addService(googletag.pubads());
+        googletag.defineSlot('/23079132631/AdUnit4', [[300, 600], [480, 320], [250, 250], [250, 360], [336, 280], [240, 400], [200, 200], [300, 250], [320, 480], [200, 446]], 'ad2').addService(googletag.pubads());
+        googletag.defineSlot('/23079132631/AdUnit4', [[300, 600], [480, 320], [250, 250], [250, 360], [336, 280], [240, 400], [200, 200], [300, 250], [320, 480], [200, 446]], 'ad3').addService(googletag.pubads());
+      
+        
+        googletag.pubads().enableSingleRequest();
+        googletag.enableServices();
+      });
+    </script>
 
     <script>
       !function(f,b,e,v,n,t,s)
@@ -68,34 +83,15 @@ const { title = "Health Quiz", description="Check your health with our free onli
 
 
 
-<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
 <script>
-/*
-
-*/
-
-window.googletag = window.googletag || {cmd: []};
-
-googletag.cmd.push(function() {
-
-  googletag.defineSlot('/23079132631/AdUnit4', [[300, 600], [480, 320], [250, 250], [250, 360], [336, 280], [240, 400], [200, 200], [300, 250], [320, 480], [200, 446]], 'ad1').addService(googletag.pubads());
-  googletag.defineSlot('/23079132631/AdUnit4', [[300, 600], [480, 320], [250, 250], [250, 360], [336, 280], [240, 400], [200, 200], [300, 250], [320, 480], [200, 446]], 'ad2').addService(googletag.pubads());
-  googletag.defineSlot('/23079132631/AdUnit4', [[300, 600], [480, 320], [250, 250], [250, 360], [336, 280], [240, 400], [200, 200], [300, 250], [320, 480], [200, 446]], 'ad3').addService(googletag.pubads());
- 
-  
-  googletag.pubads().enableSingleRequest();
-  googletag.enableServices();
-});
-
 const adUnitStrings = ["ad1", "ad2", "ad3"]
 
 
 setTimeout(function(){
   adUnitStrings.forEach(adUnitString => {
-    googletag.cmd.push(function() { googletag.display(adUnitString); });
-  })
-
-}, 1000)
+      googletag.cmd.push(function() { googletag.display(adUnitString); });
+    })
+}, 2000)
 </script>
 
 
