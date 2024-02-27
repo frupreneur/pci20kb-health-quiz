@@ -1,0 +1,17 @@
+---
+import Layout from '../layouts/Layout.astro';
+import data from '../../db/diseases.js'
+import QuizCard from "../components/QuizCard.astro"
+import ADX from '../components/ADX.astro';
+
+---
+<Layout title="Health Quiz", description="Check your health symptoms" >
+	<>
+	<ADX id="ad1"/>
+
+  {data.map(x=><QuizCard x={x} />)}
+	
+	</>
+</Layout>
+
+

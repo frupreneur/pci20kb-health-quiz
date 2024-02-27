@@ -1,0 +1,10 @@
+---
+const filteredData = Astro.props.filteredData
+import QuizCard from "./QuizCard.astro"
+---
+
+
+<div class=" flex flex-wrap mt-20 justify-center">
+    <h2 class="text-center">Related Quiz</h2>
+    {filteredData.map(y=><QuizCard x={y} />)}
+  </div> 
